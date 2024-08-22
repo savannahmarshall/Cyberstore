@@ -38,7 +38,7 @@ To use this application, follow these steps:
 **Please click [here]() to view a demo on how to use this application.**
 
 
-![screenshot of application](https://github.com/savannahmarshall/Employee-Tracker/blob/main/assets/employee-tracker-screenshot.png)
+![screenshot of application]()
 
 
 

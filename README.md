@@ -27,7 +27,7 @@ To use this application, follow these steps:
 
 **Ensure Node.js is Installed:** Confirm that you have Node.js installed. If not, download and install it from the official Node.js website which can be found in the installation section above.
 
-**Install Dependencies:** Navigate to the project folder in your command-line and run the following commands to install the necessary dependencies:
+**Install Dependencies:** Navigate to the project folder and run the following commands to install the necessary dependencies:
    * npm install
    * npm run seed
      
@@ -38,7 +38,7 @@ To use this application, follow these steps:
 **Please click [here]() to view a demo on how to use this application.**
 
 
-![screenshot of application]()
+![screenshot of application](https://github.com/savannahmarshall/E-Commerce-Back-End/blob/main/assets/challenge-13.png)
 
 
 

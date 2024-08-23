@@ -39,7 +39,7 @@ To use this application, follow these steps:
 
 **Test API Endpoints:** Use Insomnia or a similar API client to test the API endpoints and ensure everything is functioning as expected. 
 
-**Please click [here]() to view a demo on how to use this application.**
+**Please click [here](https://www.loom.com/share/bface9788c7c4153869ad179dd1bf525?sid=ee2fc962-fa98-4ef8-8dfc-7bb01adcdbe7) to view a demo on how to use this application.**
 
 
 ![screenshot of application](https://github.com/savannahmarshall/E-Commerce-Back-End/blob/main/assets/challenge-13.png)

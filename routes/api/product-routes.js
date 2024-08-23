@@ -1,12 +1,8 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
-
 // Get all products
 router.get('/', (req, res) => {
-  // Find all products
-  // Be sure to include its associated Category and Tag data
   Product.findAll({
     include: [
       {
@@ -16,8 +12,8 @@ router.get('/', (req, res) => {
       {
         model: Tag,
         attributes: ['id', 'tag_name'],
-        through: ProductTag, // This is required to get tags associated with a product
-        attributes: [], // We don't need to return any attributes from ProductTag
+        through: ProductTag, 
+        attributes: [], 
       },
     ],
   })
@@ -30,8 +26,6 @@ router.get('/', (req, res) => {
 
 // Get one product
 router.get('/:id', (req, res) => {
-  // Find a single product by its `id`
-  // Be sure to include its associated Category and Tag data
   Product.findOne({
     where: {
       id: req.params.id,
@@ -44,8 +38,8 @@ router.get('/:id', (req, res) => {
       {
         model: Tag,
         attributes: ['id', 'tag_name'],
-        through: ProductTag, // This is required to get tags associated with a product
-        attributes: [], // We don't need to return any attributes from ProductTag
+        through: ProductTag, 
+        attributes: [], 
       },
     ],
   })
@@ -63,14 +57,6 @@ router.get('/:id', (req, res) => {
 
 // Create a new product
 router.post('/', (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
   Product.create(req.body)
     .then((product) => {
       // If there's product tags, we need to create pairings to bulk create in the ProductTag model
@@ -140,7 +126,6 @@ router.put('/:id', (req, res) => {
 
 // Delete a product by its `id` value
 router.delete('/:id', (req, res) => {
-  // Delete one product by its `id` value
   Product.destroy({
     where: {
       id: req.params.id,

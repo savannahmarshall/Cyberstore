@@ -1,18 +1,15 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-// The `/api/tags` endpoint
 
 // Get all tags
 router.get('/', (req, res) => {
-  // find all tags
-  // be sure to include its associated Product data
   Tag.findAll({
     include: [
       {
         model: Product,
         through: ProductTag,
-        as: 'products', // This alias must match the alias used in associations
+        as: 'products', 
       },
     ],
   })
@@ -23,13 +20,12 @@ router.get('/', (req, res) => {
 // Get one tag by its `id`
 router.get('/:id', (req, res) => {
   // find a single tag by its `id`
-  // be sure to include its associated Product data
   Tag.findByPk(req.params.id, {
     include: [
       {
         model: Product,
         through: ProductTag,
-        as: 'products', // This alias must match the alias used in associations
+        as: 'products',
       },
     ],
   })
@@ -69,7 +65,6 @@ router.put('/:id', (req, res) => {
 
 // Delete one tag by its `id` value
 router.delete('/:id', (req, res) => {
-  // delete one tag by its `id` value
   Tag.destroy({
     where: {
       id: req.params.id,

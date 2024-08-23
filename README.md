@@ -1,7 +1,7 @@
 # E-Commerce-Back-End
 
 ## Description
-This project focuses on creating a back end for an e-commerce website that uses the latest technologies such as Express.js, PostgreSQL and Sequelize so that a company can compete with other e-commerce companies.
+For this project, I focused on creating a back end for an e-commerce website that uses the latest technologies such as Express.js, PostgreSQL and Sequelize so that a company can compete with other e-commerce companies. I built this back-end by modifying starter code.
 
 ### Key Learnings:
 * **Sequelize:** Connect to a database using Sequelize using user credentials
